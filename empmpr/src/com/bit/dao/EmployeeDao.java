@@ -38,4 +38,9 @@ public interface EmployeeDao {
      * @return
      */
     public int delete(int empno);
+
+    /**
+     * 保存文件
+     */
+    public void save();
 }

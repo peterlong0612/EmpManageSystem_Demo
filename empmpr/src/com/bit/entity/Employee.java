@@ -19,9 +19,10 @@ public class Employee {
     private double comm;
     private int deptno;
 
+    // 快速生成，alt+insert，选择constructor构造方法
     public Employee() {
     }
-
+    // 如果没有该构造方法，在前台选择自动生成，检查这里函数体是否为空
     public Employee(String ename, String job, int mgr,
                     Date hireDate, double sal, double comm, int deptno) {
         this.ename = ename;
@@ -45,6 +46,15 @@ public class Employee {
         this.deptno = deptno;
     }
 
+    public Employee(int empno, String job, double sal, double comm, int deptno) {
+        this.empno = empno;
+        this.job = job;
+        this.sal = sal;
+        this.comm = comm;
+        this.deptno = deptno;
+    }
+
+    // 快速生成，alt+insert，选择getter and setter
     public int getEmpno() {
         return empno;
     }
@@ -109,6 +119,7 @@ public class Employee {
         this.deptno = deptno;
     }
 
+    // 快速生成，alt+insert，选择toString
     @Override
     public String toString() {
         return "Employee{" +
